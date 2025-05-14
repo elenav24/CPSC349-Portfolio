@@ -11,10 +11,10 @@ export const About = () => {
           <div className="about-section">
             <h2 className="section-title">Background</h2>
             <p className="about-text">
-              I'm a passionate frontend developer with a background in computer science and design. 
-              My journey in tech began when I built my first website at 15, and I've been hooked 
-              ever since. I specialize in creating beautiful, functional interfaces with React and 
-              modern CSS.
+              I'm a 20-year old Computer Science major at CSUF. I decided to pursue a career in programming after taking
+              AP Computer Science A in high school and really enjoying it. I am also very passionate about musical theater on the side,
+              and I have been involved in 16 musicals since I was in 1st grade. I am the oldest child of 3, and I am Filipino and Italian.
+              I love to travel and have been to 7 countries and 15 states so far. I can't wait to see where life takes me next!
             </p>
           </div>
           
