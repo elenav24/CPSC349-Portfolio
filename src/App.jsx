@@ -9,6 +9,7 @@ import { Contact } from './components/sections/Contact';
 import { Home } from './components/sections/Home';
 import { Skills } from './components/sections/Skills';
 import { Projects } from './components/sections/Projects';
+import { ProjectDetail } from './components/sections/ProjectDetail';
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -28,6 +29,7 @@ function App() {
               <Route path="/about" element={<About />} />
               <Route path="/skills" element={<Skills />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/projects/:projectId" element={<ProjectDetail />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>
           </div>

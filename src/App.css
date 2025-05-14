@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
 .portfolio {
     background-image: url('./images/graphpaper.png');
     background-size: cover;
+    background-attachment: fixed; /* This keeps the background fixed while scrolling */
     background-position: center center;
-    width: 100vw;
-    height: 100vh;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* Changed from height to min-height */
+    width: 100%;
     display: flex;
+    flex-direction: column; /* Added to ensure proper layout */
 }
 
 .navbar {
@@ -14,7 +19,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "Caveat-Brush", cursive;
+    font-family: "Caveat Brush", cursive;
+    font-size: 20px;
     color: #bd4568;
   }
   

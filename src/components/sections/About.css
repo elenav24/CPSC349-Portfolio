@@ -1,0 +1,210 @@
+/* About Page Styles */
+
+  #about {
+    margin: 2rem;
+  }
+  
+  .about-paper-sheet {
+    background-color: #fff9fb;
+    border: 2px solid #ff85b2;
+    border-radius: 0 15px 15px 15px;
+    box-shadow: 5px 5px 15px rgba(255, 133, 178, 0.3);
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about-title {
+    color: #ff2d75;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #ffb6d5;
+    padding-bottom: 10px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .section-title {
+    color: #d6336c;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #ffb6d5;
+  }
+  
+  .about-text {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .education-item {
+    margin-bottom: 20px;
+  }
+  
+  .education-title {
+    color: #ff2d75;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+  }
+  
+  .education-info {
+    color: #777;
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .education-details {
+    list-style: none;
+    padding-left: 20px;
+    margin: 0;
+  }
+  
+  .education-details li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  .education-details li::before {
+    content: "•";
+    color: #ff85b2;
+    position: absolute;
+    left: 0;
+  }
+
+  /* Club Involvement Styles */
+.club-involvement {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #ffb6d5;
+  }
+  
+  .club-subtitle {
+    color: #d6336c;
+    margin-bottom: 10px;
+    font-weight: 500;
+  }
+  
+  .club-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .club-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #555;
+    line-height: 1.4;
+  }
+  
+  .club-list li::before {
+    content: "▸";
+    color: #ff85b2;
+    position: absolute;
+    left: 0;
+  }
+  
+  .club-list strong {
+    color: #ff2d75;
+    font-weight: 500;
+  }
+  
+  .club-dates {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 2px;
+    font-style: italic;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .skill-category {
+    background-color: #fff;
+    border: 1px solid #ffd6e7;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .skill-category-title {
+    color: #ff2d75;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skill-list li {
+    padding: 5px 0;
+    color: #555;
+    position: relative;
+    padding-left: 15px;
+  }
+  
+  .skill-list li::before {
+    content: "▹";
+    color: #ff85b2;
+    position: absolute;
+    left: 0;
+  }
+  
+  .resume-download {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .resume-button {
+    display: inline-block;
+    background-color: #ff2d75;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+  }
+  
+  .resume-button:hover {
+    background-color: #d6336c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(255, 45, 117, 0.2);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .about-page {
+      padding: 20px;
+    }
+    
+    .about-paper-sheet {
+      padding: 20px;
+    }
+    
+    .about-title {
+      font-size: 1.8rem;
+    }
+    
+    .skills-grid {
+      grid-template-columns: 1fr;
+    }
+  }
