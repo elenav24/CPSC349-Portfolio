@@ -1,3 +1,5 @@
+import './LoadingScreen.css';
+
 import { useEffect, useState } from "react";
 
 export const StylizedLoadingBar = ({ onComplete }) => {
@@ -7,33 +9,31 @@ export const StylizedLoadingBar = ({ onComplete }) => {
     useEffect(() => {
         const interval = setInterval(() => {
             setFilledBars((prev) => {
-            if (prev >= totalBars) {
-                clearInterval(interval);
-                setTimeout(() => {
-                    onComplete?.(); // optional callback
-                }, 1000);
-                return prev;
-            }
-        return prev + 1;
-        });
-    }, 100); // speed of animation
+                if (prev >= totalBars) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        onComplete(); 
+                    }, 1000);
+                    return prev;
+                }
+                return prev + 1;
+            });
+        }, 80); // speed of animation
 
-    return () => clearInterval(interval);
+        return () => clearInterval(interval);
     }, [onComplete]);
 
     return (
-        <div className="fixed inset-0 flex flex-col items-center justify-center bg-pink-200">
-            <p className="mb-2 font-bold text-gray-700 text-2xl">Loading ...</p>
-                <div className="flex border-2 border-black p-1 gap-[2px] bg-white overflow-hidden">
-                    {[...Array(totalBars)].map((_, i) => (
-                        <div
-                            key={i}
-                            className={`w-4 h-8 transform -skew-x-12 border border-black ${
-                            i < filledBars ? "bg-pink-400" : "bg-white"
-                            }`}
-                        />
-                    ))}
-                </div>
+        <div className="loading-container">
+            <p className="loading-text">Loading ...</p>
+            <div className="loading-bar-container">
+                {[...Array(totalBars)].map((_, i) => (
+                    <div
+                        key={i}
+                        className={`bar ${i < filledBars ? "bar-filled" : "bar-empty"}`}
+                    />
+                ))}
+            </div>
         </div>
     );
 };
