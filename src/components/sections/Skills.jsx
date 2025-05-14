@@ -6,14 +6,16 @@ export const Skills = () => {
     {
       title: 'Technical',
       skills: [
+        'Python',
+        'C++',
         'HTML',
         'CSS',
+        'Java',
         'JavaScript',
         'React',
         'Node.js',
+        'C',
         'Git',
-        'TypeScript',
-        'Responsive Design'
       ]
     },
     {
@@ -33,9 +35,7 @@ export const Skills = () => {
         'UI/UX Principles',
         'Figma',
         'Adobe Creative Suite',
-        'Color Theory',
-        'Typography',
-        'Wireframing'
+        'Color Theory'
       ]
     }
   ];
