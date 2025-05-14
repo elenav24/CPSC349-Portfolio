@@ -82,9 +82,8 @@ export const About = () => {
           <div className="about-section">
             <h2 className="section-title">Interests</h2>
             <p className="about-text">
-              When I'm not coding, you can find me sketching UI designs, contributing to open source projects,
-              or hiking in nature. I'm passionate about accessibility in tech and regularly volunteer to teach
-              coding to underrepresented groups in STEM.
+              When I'm not coding, you can find me thrifting, going to concerts, hanging out with friends and family, vlogging,
+              watching tv/movies, reading, shopping, or traveling. I love to explore new places and try new things.
             </p>
           </div>
           
