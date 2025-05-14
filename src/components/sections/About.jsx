@@ -23,10 +23,6 @@ export const About = () => {
             <div className="education-item">
                 <h3 className="education-title">Bachelor of Science in Computer Science</h3>
                 <p className="education-info">CSU Fullerton, 2022-2026</p>
-                <ul className="education-details">
-                <li>GPA: 3.8/4.0</li>
-                <li>Dean's List all semesters</li>
-                </ul>
                 
                 <div className="club-involvement">
                 <h3 className="club-subtitle">Club Involvement</h3>
